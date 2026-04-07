@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Portfolio Project</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Internal CSS for Hero Section */
+        .hero {
+            text-align: center;
+            font-family: cursive;
+            padding: 4rem 1rem;
+            background: #ffffff;
+            color: rgb(13, 25, 99);
+            border-color: #450909;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            color: #0c195b;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .nav-card {
+            background: #ffffff;
+            border: 2px solid #2c3e50;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .nav-card:hover {
+            background: #3498db;
+            color: white;
+            border-color: #3478a5;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" style="border-bottom: 2px solid rgb(20, 17, 104);">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="interests.html">Interests</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <header class="hero" style="display: flex; align-items: center; justify-content: center; gap: 30px; text-align: left;">
+    <div>
+        <h1>ROHIT SHRESTHA</h1>
+        <h2>Welcome to My Portfolio</h2>
+        <p style="font-style: italic; opacity: 0.9;">Student & Tech Enthusiast</p>
+    </div>
+
+    <img src="ROHIT.PNG" 
+         alt="Rohit Shrestha" 
+         style="width: auto; 
+                height: 330px; /* Adjust this height to control the image size */
+                display: block; 
+                margin-top: -20px; /* Optional: nudges the image up if it overlaps the border-radius */
+                object-fit: contain; /* Ensures the whole photo fits without distortion */">
+</header>
+
+        <section>
+            <h2>Explore My Work</h2>
+            <p>Select a category below to learn more about my background, technical skills, and academic interests.</p>
+            
+            <div class="nav-grid">
+                <a href="about.html" class="nav-card">About Me</a>
+                <a href="skills.html" class="nav-card">My Skills</a>
+                <a href="interests.html" class="nav-card">Interests</a>
+                <a href="contact.html" class="nav-card">Contact</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rohit Shrestha | Built with Pure HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
